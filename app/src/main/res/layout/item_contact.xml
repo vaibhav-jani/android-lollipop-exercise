@@ -18,12 +18,14 @@
         <ImageView
             android:id="@+id/ivProfile"
             android:layout_width="match_parent"
+            android:transitionName="robot"
             android:layout_height="@dimen/grid_profile_height"
             android:scaleType="centerCrop" />
 
         <RelativeLayout
             android:layout_alignParentBottom="true"
             android:layout_width="match_parent"
+            android:background="@drawable/ripple_one"
             android:layout_height="@dimen/palette_height">
 
             <View

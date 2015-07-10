@@ -30,7 +30,7 @@ public class DetailsActivity extends AppCompatActivity {
         vPalette = findViewById(R.id.vPalette);
 
         // Extract contact from bundle
-        mContact = (Contact)getIntent().getExtras().getSerializable(EXTRA_CONTACT);
+        mContact = (Contact)getIntent().getExtras().getParcelable(EXTRA_CONTACT);
 
         // Fill views with data
         Picasso.with(DetailsActivity.this).load(mContact.getThumbnailDrawable()).into(ivProfile);
